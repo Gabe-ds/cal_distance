@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="my-3">今回，地点{{ location_s }}と地点{{ location_g }}の距離を求めました．</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="/media/{{ image_path_s }}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ location_s }}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+                <img src="/media/{{ image_path_g }}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ location_g }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <p>地点{{ location_s }}と地点{{ location_g }}の距離は{{ rho }}kmです．</p>
+    </div>
+    <div class="row">
+        <p class="text-center"><a class="" href="/isbs/upload_list">戻る</a></p>
+    </div>
+</div>
+{% endblock content %}

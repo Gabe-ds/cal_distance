@@ -1,0 +1,8 @@
+# secret
+config/settings_secret.py
+
+# migrations file
+isbs/migrations
+
+# image file
+media/img/

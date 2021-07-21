@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-3">アップロードされた画像データを削除します．</h1>
+    <form class="" method="POST" action="" name="" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>本当に削除しますがよろしいですか？</p>
+        <button class="btn btn-primary" type="submit">削除</button>
+        <p><a class="" href="/isbs/upload_list">戻る</a></p>
+    </form>
+</div>
+{% endblock content %}

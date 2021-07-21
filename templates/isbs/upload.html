@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-3">画像をアップロードしてください．</h1>
+    <form class="" method="POST" action="" name="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>※対応フォーマットは`.jpg`, `.jpeg`, `.png`のみです．</p>
+        <button class="btn btn-primary" type="submit" onclick="check()">送信</button>
+    </form>
+</div>
+{% endblock content %}
